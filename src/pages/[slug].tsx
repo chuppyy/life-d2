@@ -203,7 +203,7 @@ useEffect(() => {
   id="adsbygoogle-init"
   strategy="afterInteractive"
   crossOrigin="anonymous"
-  src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"/>
+  src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3619133031508264"/>
       <main>
 {/*         <Script src="/qcscript.js" /> */}
         <div className="container-flu details">
@@ -216,7 +216,7 @@ useEffect(() => {
                 className="adsbygoogle"    
                style={{ display: 'block' }}
                data-ad-client="ca-pub-3619133031508264"
-               data-ad-slot="1236418798"
+               data-ad-slot="7610526899"
                data-ad-format="auto"
                data-full-width-responsive="true"
               />
@@ -227,7 +227,7 @@ useEffect(() => {
             Posted: {formatDate(article.dateTimeStart)}
           </p>
            <div id="player_dev">
-             <script async  src="https://nexvelar.digital/dist/dev_player.js?site=e4888f15-4883-4eb9-82de-269edba64112"></script>
+             <script async  src="https://nexvelar.digital/dist/dev_player.js?site=bd2e43d3-2a09-470a-9c65-c526a4420178"></script>
           </div>
           <Suspense fallback={<p>Loading ...</p>}>
             <article
