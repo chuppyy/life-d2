@@ -51,7 +51,7 @@ useEffect(() => {
     try {
       var qcImgDiv = document.getElementById("qcImg");
  console.log("qcImgDiv",qcImgDiv);
-      if (qcImgDiv) {
+      if (qcImgDiv && 0) {
         var insElement = document.createElement("ins");
         insElement.className = "adsbygoogle";
         insElement.style.display = "block";
