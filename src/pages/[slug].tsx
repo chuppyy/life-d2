@@ -216,7 +216,7 @@ useEffect(() => {
                 className="adsbygoogle"    
                style={{ display: 'block' }}
                data-ad-client="ca-pub-3619133031508264"
-               data-ad-slot="9136018098"
+               data-ad-slot="9266427331"
                data-ad-format="auto"
                data-full-width-responsive="true"
               />
