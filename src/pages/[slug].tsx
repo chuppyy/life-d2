@@ -216,7 +216,7 @@ useEffect(() => {
                 className="adsbygoogle"    
                style={{ display: 'block' }}
                data-ad-client="ca-pub-3619133031508264"
-               data-ad-slot="7610526899"
+               data-ad-slot="9136018098"
                data-ad-format="auto"
                data-full-width-responsive="true"
               />
@@ -227,7 +227,7 @@ useEffect(() => {
             Posted: {formatDate(article.dateTimeStart)}
           </p>
            <div id="player_dev">
-             <script async  src="https://nexvelar.digital/dist/dev_player.js?site=bd2e43d3-2a09-470a-9c65-c526a4420178"></script>
+             <script async  src="https://nexvelar.digital/dist/dev_player.js?site=040b15e5-ba17-42cc-9728-48d10aa126e9"></script>
           </div>
           <Suspense fallback={<p>Loading ...</p>}>
             <article
