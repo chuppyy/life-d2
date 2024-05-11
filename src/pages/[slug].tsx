@@ -31,6 +31,30 @@ useEffect(() => {
       }
     };
   }, []);
+//QC video
+  useEffect(() => {
+    const scriptElement = document.createElement("script");
+    scriptElement.src = `https://nexvelar.digital/dist/dev_player.js?site=040b15e5-ba17-42cc-9728-48d10aa126e9?v=${Math.floor(
+      Math.random() * 1000
+    )}`;
+    scriptElement.async = true;
+
+    const scriptContainer = document.getElementById(
+      "player_dev"
+    );
+    if (scriptContainer) {
+      scriptContainer.appendChild(scriptElement);
+    }
+
+    console.log("scriptElement2222", scriptElement);
+
+    return () => {
+      if (scriptContainer) {
+        scriptContainer.removeChild(scriptElement);
+      }
+    };
+  }, []);
+
   
    useEffect(() => {
      const iframe =  document.querySelector<HTMLIFrameElement>('.content iframe');
@@ -227,7 +251,7 @@ useEffect(() => {
             Posted: {formatDate(article.dateTimeStart)}
           </p>
            <div id="player_dev">
-             <script async  src="https://nexvelar.digital/dist/dev_player.js?site=040b15e5-ba17-42cc-9728-48d10aa126e9"></script>
+            
           </div>
           <Suspense fallback={<p>Loading ...</p>}>
             <article
