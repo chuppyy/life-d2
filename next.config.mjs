@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["apisport.sportsandtravelonline.com","apisport.sportsandtravelonline.com"],
+    domains: ["apisport.vbonews.com","apisport.vbonews.com"],
   },
 };
 
