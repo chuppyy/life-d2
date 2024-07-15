@@ -231,11 +231,7 @@ useEffect(() => {
       <main>
 {/*         <Script src="/qcscript.js" /> */}
         <div className="container-flu details">
-          <script
-                    async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3619133031508264"
-                    crossOrigin="anonymous"
-                  ></script>
+          
                  <ins
                 className="adsbygoogle"    
                style={{ display: 'block' }}
