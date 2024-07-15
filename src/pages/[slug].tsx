@@ -75,12 +75,12 @@ useEffect(() => {
     try {
       var qcImgDiv = document.getElementById("qcImg");
  console.log("qcImgDiv",qcImgDiv);
-      if (qcImgDiv && 0) {
+      if (qcImgDiv ) {
         var insElement = document.createElement("ins");
         insElement.className = "adsbygoogle";
         insElement.style.display = "block";
-        insElement.setAttribute("data-ad-client", "ca-pub-3619133031508264");
-        insElement.setAttribute("data-ad-slot", "9137554578");
+        insElement.setAttribute("data-ad-client", "ca-pub-3052636440995168");
+        insElement.setAttribute("data-ad-slot", "8217203965");
         insElement.setAttribute("data-ad-format", "auto");
         insElement.setAttribute("data-full-width-responsive", "true");
 
@@ -235,8 +235,8 @@ useEffect(() => {
                  <ins
                 className="adsbygoogle"    
                style={{ display: 'block' }}
-               data-ad-client="ca-pub-3619133031508264"
-               data-ad-slot="9266427331"
+               data-ad-client="ca-pub-3052636440995168"
+               data-ad-slot="8822573157"
                data-ad-format="auto"
                data-full-width-responsive="true"
               />
