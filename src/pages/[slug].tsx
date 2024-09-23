@@ -32,7 +32,7 @@ useEffect(() => {
     };
   }, []);
 //QC video
-  useEffect(() => {
+  /*useEffect(() => {
     const scriptElement = document.createElement("script");
     scriptElement.src = `https://nexvelar.digital/dist/dev_player.js?site=040b15e5-ba17-42cc-9728-48d10aa126e9?v=${Math.floor(
       Math.random() * 1000
@@ -53,8 +53,37 @@ useEffect(() => {
         scriptContainer.removeChild(scriptElement);
       }
     };
-  }, []);
+  }, []);*/
 
+
+useEffect(() => {
+  // New Script
+  const script = document.createElement("script");
+  script.src = `https://cdn.unibotscdn.com/player/mvp/player.js?v=${Math.floor(
+    Math.random() * 1000
+  )}`;
+  script.async = true;
+  document.head.appendChild(script);
+  // Ensure the script runs once the component mounts
+  const script2 = document.createElement("script");
+  script2.innerHTML = `
+      window.unibots = window.unibots || { cmd: [] };
+      unibots.cmd.push(function() { unibotsPlayer("boonovel.com_1703240626524") });
+  `;
+  const scriptContainer = document.getElementById("div-ub-boonovel.com_1703240626524")
+  if(scriptContainer) {
+    scriptContainer.appendChild(script2);
+  }
+  
+  // Cleanup function to remove the script when the component unmounts
+  return () => {
+    const div = document.getElementById("div-ub-boonovel.com_1703240626524");
+    if (div) {
+      div.innerHTML = "";
+    }
+  };
+}, []);
+  
   
    useEffect(() => {
      const iframe =  document.querySelector<HTMLIFrameElement>('.content iframe');
@@ -246,9 +275,9 @@ useEffect(() => {
           <p className="mb-4 text-lg">
             Posted: {formatDate(article.dateTimeStart)}
           </p>
-           <div id="player_dev">
-            
+           <div id="player_dev">            
           </div>
+          <div id="div-ub-boonovel.com_1703240626524"></div>
           <Suspense fallback={<p>Loading ...</p>}>
             <article
               className="content"
