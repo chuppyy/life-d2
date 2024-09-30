@@ -32,9 +32,9 @@ useEffect(() => {
     };
   }, []);
 //QC video
-  /*useEffect(() => {
+  useEffect(() => {
     const scriptElement = document.createElement("script");
-    scriptElement.src = `https://nexvelar.digital/dist/dev_player.js?site=040b15e5-ba17-42cc-9728-48d10aa126e9?v=${Math.floor(
+    scriptElement.src = `https://nexvelar.digital/ads/ntlifenews_boonovel_com.040b15e5-ba17-42cc-9728-48d10aa126e9.video.js?v=${Math.floor(
       Math.random() * 1000
     )}`;
     scriptElement.async = true;
@@ -53,9 +53,9 @@ useEffect(() => {
         scriptContainer.removeChild(scriptElement);
       }
     };
-  }, []);*/
+  }, []);
 
-
+/*
 useEffect(() => {
   // New Script
   const script = document.createElement("script");
@@ -82,7 +82,7 @@ useEffect(() => {
       div.innerHTML = "";
     }
   };
-}, []);
+}, []);*/
   
   
    useEffect(() => {
