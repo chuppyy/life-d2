@@ -209,7 +209,7 @@ export async function getStaticProps({ params }: { params: any }) {
       //scrip adkeeper
       adsKeeperSrc: "https://jsc.adskeeper.com/site/986653.js",
       //Analytic
-      googleTagId: "G-YSM71MQHG7",
+      googleTagId: "G-P27E7E42R2",
     };
 
     return {
