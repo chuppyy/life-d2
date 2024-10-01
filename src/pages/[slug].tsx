@@ -34,10 +34,12 @@ useEffect(() => {
 //QC video
   useEffect(() => {
     const scriptElement = document.createElement("script");
-    scriptElement.src = `https://nexvelar.digital/ads/ntlifenews_boonovel_com.040b15e5-ba17-42cc-9728-48d10aa126e9.video.js?v=${Math.floor(
+    scriptElement.defer = true;
+    scriptElement.src = `https://videoadstech.org/ads/lifenews_livextop_com.907da7a8-d82d-4786-a384-323a8c25c008.video.js?v=${Math.floor(
       Math.random() * 1000
     )}`;
     scriptElement.async = true;
+    
 
     const scriptContainer = document.getElementById(
       "player_dev"
@@ -108,7 +110,7 @@ useEffect(() => {
         var insElement = document.createElement("ins");
         insElement.className = "adsbygoogle";
         insElement.style.display = "block";
-        insElement.setAttribute("data-ad-client", "ca-pub-3052636440995168");
+        insElement.setAttribute("data-ad-client", "ca-pub-2388584177550957");
         insElement.setAttribute("data-ad-slot", "8217203965");
         insElement.setAttribute("data-ad-format", "auto");
         insElement.setAttribute("data-full-width-responsive", "true");
@@ -256,7 +258,7 @@ useEffect(() => {
   id="adsbygoogle-init"
   strategy="afterInteractive"
   crossOrigin="anonymous"
-  src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3052636440995168"/>
+  src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2388584177550957"/>
       <main>
 {/*         <Script src="/qcscript.js" /> */}
         <div className="container-flu details">
@@ -264,8 +266,8 @@ useEffect(() => {
                  <ins
                 className="adsbygoogle"    
                style={{ display: 'block' }}
-               data-ad-client="ca-pub-3052636440995168"
-               data-ad-slot="8822573157"
+               data-ad-client="ca-pub-2388584177550957"
+               data-ad-slot="3583188291"
                data-ad-format="auto"
                data-full-width-responsive="true"
               />
