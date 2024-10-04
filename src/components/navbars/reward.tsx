@@ -25,7 +25,7 @@ export default function RewardedAd() {
             // Nếu chưa hiển thị hoặc đã quá 10 phút, tiếp tục xử lý
             const rewardedSlot = googletag
               .defineOutOfPageSlot(
-                "/23201474937/newspaper.livextop.com/newspaper.livextop.com_rewarded",
+                "/23201474937/lifenews.livextop.com/lifenews.livextop.com_rewarded",
                 googletag.enums.OutOfPageFormat.REWARDED
               )
               .addService(googletag.pubads());
