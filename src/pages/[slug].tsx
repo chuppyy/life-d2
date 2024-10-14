@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import Script from "next/script";
 import Head from "next/head";
 import { useEffect } from "react";
-import RewardedAd from "@/components/navbars/reward";
+//import RewardedAd from "@/components/navbars/reward";
 const formatDate = (str: string) => {
   const date = new Date(str);
   return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
@@ -23,20 +23,20 @@ export default function Page(data: any) {
   } = data.parameters;
 
   // // QC video
-  // useEffect(() => {
-  //   const scriptElement = document.createElement("script");
-  //   scriptElement.src = `${videoScriptSrc}?v=${Math.floor(Math.random() * 1000)}`;
-  //   scriptElement.async = true;
-  //   const scriptContainer = document.getElementById("player_dev");
-  //   if (scriptContainer) {
-  //     scriptContainer.appendChild(scriptElement);
-  //   }
-  //   return () => {
-  //     if (scriptContainer) {
-  //       scriptContainer.removeChild(scriptElement);
-  //     }
-  //   };
-  // }, [videoScriptSrc]);
+   useEffect(() => {
+     const scriptElement = document.createElement("script");
+     scriptElement.src = `${videoScriptSrc}?v=${Math.floor(Math.random() * 1000)}`;
+     scriptElement.async = true;
+     const scriptContainer = document.getElementById("player_dev");
+     if (scriptContainer) {
+       scriptContainer.appendChild(scriptElement);
+     }
+     return () => {
+       if (scriptContainer) {
+         scriptContainer.removeChild(scriptElement);
+       }
+     };
+   }, [videoScriptSrc]);
 
 /*
 useEffect(() => {
@@ -204,21 +204,21 @@ export async function getStaticProps({ params }: { params: any }) {
 
     // Pass parameters dynamically
     const parameters = {
-      videoScriptSrc: "https://nexvelar.digital/ads/nthotnews_boonovel_com.eb373146-0084-4675-83c9-23556caad088.video.js",
+      videoScriptSrc: "https://nexvelar.digital/dist/dev_player.js?site=040b15e5-ba17-42cc-9728-48d10aa126e9",
       //Code auto 
-      googleClientId: "ca-pub-2388584177550957",
+      googleClientId: "ca-pub-3052636440995168",
       //GA tiêu đề
-      googleClientSlotId:"3583188291",
+      googleClientSlotId:"8822573157",
       //GA sau video
-      googleAdSlot: "2446463928",
+      googleAdSlot: "8217203965",
 //Cái sau
-      mgWidgetId1: "1677046",
+      mgWidgetId1: "1603531",
       //Cái trước
-      mgWidgetId2: "1677046",
+      mgWidgetId2: "1603533",
 
-      mgWidgetFeedId: "1677045",
+      mgWidgetFeedId: "1603526",
       //scrip adkeeper
-      adsKeeperSrc: "https://jsc.adskeeper.com/site/986653.js",
+      adsKeeperSrc: "https://jsc.adskeeper.com/site/936536.js",
       //Analytic
       googleTagId: "G-P27E7E42R2",
     };
