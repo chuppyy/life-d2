@@ -156,9 +156,6 @@ useEffect(() => {
 
       <main>
         <div className="container-flu details">
-          
-          <h1>{article.name}</h1>
-          <p className="mb-4 text-lg">Posted: {formatDate(article.dateTimeStart)}</p>
           <ins
             className="adsbygoogle"
             style={{ display: 'block' }}
@@ -167,6 +164,9 @@ useEffect(() => {
             data-ad-format="auto"
             data-full-width-responsive="true"
           />
+          <h1>{article.name}</h1>
+          <p className="mb-4 text-lg">Posted: {formatDate(article.dateTimeStart)}</p>
+          
           <div id="player_dev"></div>
           <div id="div-ub-boonovel.com_1703240626524"></div>
           <Suspense fallback={<p>Loading ...</p>}>
