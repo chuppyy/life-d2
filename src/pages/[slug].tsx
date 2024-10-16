@@ -185,7 +185,7 @@ useEffect(() => {
           async
         ></script>
       </main>
-     
+     <RewardedAd />
     </>
   );
 }
