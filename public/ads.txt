@@ -804,4 +804,5 @@ improvedigital.com, 1944, RESELLER
 amxrtb.com, 105199704, DIRECT
 videoheroes.tv, 212716, RESELLER, 064bc410192443d8
 33across.com, 0013300001hSPhhAAG, DIRECT, bbea06d9c4d2853c
+mgid.com, 840523, DIRECT, d4c29acad76ce94f
 
