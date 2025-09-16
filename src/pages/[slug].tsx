@@ -83,12 +83,13 @@ useEffect(() => {
       }
 
       var qcDivqc3 = document.getElementById("qcmgidgb3");
-      if (false && qcDivqc3) {
+      /*
+      if (qcDivqc3) {
         var newDiv = document.createElement('div');
         newDiv.innerHTML = `<div data-type="_mgwidget" data-widget-id="${mgWidgetId1}"></div>
                             <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>`;
         qcDivqc3.appendChild(newDiv);
-      }
+      }*/
   var qcDivqc2 = document.getElementById("qcmgidgb2");
       if (qcDivqc2) {
        var insElement = document.createElement("ins");
@@ -101,13 +102,14 @@ useEffect(() => {
         qcDivqc2.appendChild(insElement);
       }
       var qcDiv = document.getElementById("qcmgidgb");
-      if (false && qcDiv) {
+      /*
+      if (false) {
         var newDiv = document.createElement('div');
         newDiv.innerHTML = `<div data-type="_mgwidget" data-widget-id="${mgWidgetId2}"></div>
                             <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>`;
         qcDiv.appendChild(newDiv);
       }
-
+*/
       const ads = document.getElementsByClassName("adsbygoogle").length;
       for (var i = 0; i < ads; i++) {
         ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
