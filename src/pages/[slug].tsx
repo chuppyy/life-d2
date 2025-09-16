@@ -83,7 +83,7 @@ useEffect(() => {
       }
 
       var qcDivqc3 = document.getElementById("qcmgidgb3");
-      if (qcDivqc3 && 1 === 2) {
+      if (qcDivqc3 && false) {
         var newDiv = document.createElement('div');
         newDiv.innerHTML = `<div data-type="_mgwidget" data-widget-id="${mgWidgetId1}"></div>
                             <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>`;
@@ -101,7 +101,7 @@ useEffect(() => {
         qcDivqc2.appendChild(insElement);
       }
       var qcDiv = document.getElementById("qcmgidgb");
-      if (qcDiv && 1 === 2) {
+      if (qcDiv && false) {
         var newDiv = document.createElement('div');
         newDiv.innerHTML = `<div data-type="_mgwidget" data-widget-id="${mgWidgetId2}"></div>
                             <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>`;
